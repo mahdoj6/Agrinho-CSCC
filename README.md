@@ -45,7 +45,7 @@ Imagens de paisagens naturais e urbanas e fotos de pessoas trabalhando em projet
 - Clone ou faça o download do repositório;  
 - Abra o arquivo "index.html" no navegador de sua escolha (para melhor experiência utilize o chrome).
 
-# **Fontes**
+# **Referências**
 
 NETO, N. C. Produção orgânica: uma potencialidade estratégica para a agricultura familiar. Revista Percurso - NEMO, v. 2, n. 2 , p. 73-95, 2010.  
 Sites sobre práticas sustentáveis.
