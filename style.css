@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --primary-color: #24784e;
+    --secondary-color: #8fa971;
+    --text-color: #723c06;
+    --background-color: #badcbc;
+    --button-hover: #012E40;
+    --font-body: "Chocolate Classical Sans", serif;
+    --font-titulo: "Rakkas", serif;
+    --texto-rodape: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+img {
+    max-width: 50%;
+}
+
+#fonte-corpo {
+    font-size: 23px;
+}
+
+#cor-rodape {
+    color: white;
+}
+
+header {
+    background: var(--primary-color);
+    color: #d0ffc9;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+header h1 {
+    font-family: var(--font-titulo);
+    margin-top: 10px;
+    color: #ddffb7;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(0, 255, 38);
+    font-weight: bold;
+}
+
+.conteudo {
+    background: rgb(209, 190, 169);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.cta-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: var(--secondary-color);
+    color: var(--text-color);
+    box-shadow: 2px 2px 2px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 8px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galeria-img {
+    width: 280px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+
+    .galeria-img {
+        width: 100px;
+    }
+}
+
+#contraste:checked ~ .site {
+    background-color: black;
+    color: yellow;
+}
+
+#contraste:checked ~ .site header {
+    background-color: black;
+    color: yellow;
+}
+
+#contraste:checked ~ .site header h1 {
+    color: yellow;
+}
+
+#contraste:checked ~ .site nav,
+#contraste:checked ~ .site nav ul li a {
+    background-color: black;
+    color: yellow;
+    border: none;
+}
+
+#contraste:checked ~ .site .conteudo {
+    background-color: #222;
+    color: yellow;
+    border: 2px solid yellow;
+}
+
+#contraste:checked ~ .site .botao,
+#contraste:checked ~ .site .cta-button {
+    background-color: yellow;
+    color: black;
+    border: 2px solid yellow;
+    font-weight: bold;
+}
+
+#contraste:checked ~ .site footer {
+    background-color: black;
+    color: yellow;
+}
+
+#contraste:checked + label.botao {
+    background-color: black;
+    color: yellow;
+    border: 2px solid yellow;
+    font-weight: bold;
+}
